@@ -13,6 +13,20 @@
 </head>
 
 <body>
+  Enter Maghreb Time:
+
+  <input type="time" id="mgrb">
+
+  <br>
+
+  Enter Fajr (or sunrise?) Time:
+
+  <input type="time" id="fjr" >
+
+  <input type="button" id ="calc" value = "calculate" onclick="midnightCalc(document.getElementById('fjr').value, document.getElementById('mgrb').value)">
+  <br>
+  <p id = "output"> </p>
   <script src="js/scripts.js"></script>
 </body>
 </html>
+
