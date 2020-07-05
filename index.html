@@ -2,31 +2,44 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+    <title>The HTML5 Herald</title>
+    <style type="text/css">
+        body {
+            text-align: center;
+            font-family: Georgia, "Times New Roman",
+            Times, serif;
+            color: black;
+            background-color: #AED6F1 }
+        h1 {
+            font-family: Helvetica, Geneva, Arial,
+            SunSans-Regular, sans-serif }
+    </style>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
 
 </head>
 
 <body>
-  Enter Maghreb Time:
 
-  <input type="time" id="mgrb">
+<h1>Islamic Midnight Calculator</h1>
 
-  <br>
+Enter Maghrib Time:
 
-  Enter Fajr (or sunrise?) Time:
+<input type="datetime-local" id="mgrb">
 
-  <input type="time" id="fjr" >
+<br>
 
-  <input type="button" id ="calc" value = "calculate" onclick="midnightCalc(document.getElementById('fjr').value, document.getElementById('mgrb').value)">
-  <br>
-  <p id = "output"> </p>
-  <script src="js/scripts.js"></script>
+Enter Fajr Time:
+
+<input type="datetime-local" id="fjr">
+
+<input type="button" id ="calc" value = "calculate" onclick="midnightCalc(document.getElementById('fjr').value, document.getElementById('mgrb').value)">
+<br>
+<p id = "output"> </p>
+<script src="js/scripts.js"></script>
 </body>
 </html>
-
