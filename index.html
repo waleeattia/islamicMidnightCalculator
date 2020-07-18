@@ -1,45 +1,54 @@
-<!doctype html>
+﻿<!doctype html>
 
 <html lang="en">
 <head>
+    <link rel="shortcut icon" type="image/png" href="C:\Users\walee\Desktop\islamicMidnightCalculator\img\icons8-new-moon-64.png">
     <meta charset="utf-8">
 
-    <title>The HTML5 Herald</title>
+    <title>IMC</title>
     <style type="text/css">
-        body {
-            text-align: center;
-            font-family: Georgia, "Times New Roman",
-            Times, serif;
-            color: black;
-            background-color: #AED6F1 }
-        h1 {
-            font-family: Helvetica, Geneva, Arial,
-            SunSans-Regular, sans-serif }
     </style>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
     <link rel="stylesheet" href="css/styles.css?v=1.0">
 
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+
 </head>
 
 <body>
 
-<h1>Islamic Midnight Calculator</h1>
+    <br>
 
-Enter Maghrib Time:
+    <h1>Islamic Midnight Calculator</h1>
 
-<input type="datetime-local" id="mgrb">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-<br>
 
-Enter Fajr Time:
+    Enter Maghrib Time:
 
-<input type="datetime-local" id="fjr">
+    <input type="datetime-local" id="mgrb">
 
-<input type="button" id ="calc" value = "calculate" onclick="midnightCalc(document.getElementById('fjr').value, document.getElementById('mgrb').value)">
-<br>
-<p id = "output"> </p>
-<script src="js/scripts.js"></script>
+    <br>
+
+    Enter Fajr Time:
+
+    <input type="datetime-local" id="fjr">
+
+    <button id="calc" value="calculate" onclick="midnightCalc(document.getElementById('fjr').value, document.getElementById('mgrb').value)" class="btn calculate">calculate</button>
+
+    <br>
+    <p id="output"> </p>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
